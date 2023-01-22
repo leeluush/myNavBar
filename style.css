@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,Arial, Helvetica, sans-serif;
+    color:black
+}
+
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    text-align: center;    
+    padding: 0.9em 1em;
+   
+}
+
+
+
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+    background-color: gold;
+  
+
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+    background-color: gold;
+    
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+nav > ul.navBar {
+    background-color: gold;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+
+nav li:hover ul,
+nav li:focus-within ul{
+  visibility: visible;
+  outline: 0;
+
+ }
+
+
+nav a:hover,
+nav a:focus {
+  background-color: lightpink;
+  outline: 0;
+}
+
+@media (any-hover: none) {
+
+   
+
+    nav form {
+        padding: 1em;
+    }
+
+    form {
+        margin-top: 0em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+   
+   
+}
+
+nav ul ul {
+    flex-direction: row;
+    visibility: visible;
+    position: static;
+    border-top: 1px dashed;
+
+}
+nav > ul >  li{
+    border-bottom: 1px solid;
+
+    width: 100%;
+  }
+
+
+
+li a{
+    text-align: left;
+}
+}
